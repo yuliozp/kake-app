@@ -4,7 +4,7 @@ import { addDesign, getFullCatalog, upsertOption } from "@/lib/db";
 export const dynamic = "force-dynamic";
 
 function authorized(req) {
-  const key = process.env.ADMIN_KEY || "kake-admin";
+  const key = process.env.ADMIN_KEY || "kake";
   const header = req.headers.get("x-admin-key") || "";
   return header === key;
 }
