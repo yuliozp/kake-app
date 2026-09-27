@@ -44,8 +44,8 @@ export default function AdminPage() {
   return (
     <main className="wrap">
       <div className="card">
-        <h2>Panel admin Kake</h2>
-        <p className="note">Clave por defecto: <code>kake-admin</code> (cámbiala con ADMIN_KEY en Vercel).</p>
+        <h2>Panel admin kake</h2>
+        <p className="note">Clave por defecto: <code>kake</code> (cámbiala con ADMIN_KEY en Vercel).</p>
         <label>Clave admin</label>
         <input value={key} onChange={(e) => setKey(e.target.value)} />
         <button className="btn" style={{ marginTop: 12 }} onClick={load}>Entrar</button>
